@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+<form name="f1">
+
+<h3> Validação de E-mail com JavaScript</h3>
+<p>E-mail:</p>
+<input type="text" name="email" onblur="validacaoEmail(f1.email)"  maxlength="60" size='65'>
+<div id="msgemail" name="email"></div>
+
+<p id="question"></p>
+    <ul id="options">
+      <li><button onclick="checkAnswer(0)">Opção 1</button></li><br>
+      <li><button onclick="checkAnswer(1)">Opção 2</button></li><br>
+      <li><button onclick="checkAnswer(2)">Opção 3</button></li><br>
+      <li><button onclick="checkAnswer(3)">Opção 4</button></li><br>
+    </ul>
+  </div>
+  <p id="result"></p>
+
+</form>
+
+<a href="index.html">
+  <button>Voltar ao Início</button>
+</a>
+
+<script src="variados.js"></script>
+</body>
+</html>
